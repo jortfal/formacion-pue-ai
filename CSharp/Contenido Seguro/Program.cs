@@ -1,13 +1,14 @@
 ﻿using Azure.AI.ContentSafety;
 using Azure;
 
-namespace Contenido_Seguro {
+namespace Contenido_Seguro 
+{
     class Program
     {
         static void Main(string[] args)
         {
-            string url = "<end point>"
-            string clave = "<key1 or key2>"
+            string url = "<end point>";
+            string clave = "<key1 or key2>";
 
             var cliente = new ContentSafetyClient(new Uri(url), new AzureKeyCredential(clave));
 
